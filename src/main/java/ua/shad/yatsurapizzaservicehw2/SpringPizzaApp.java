@@ -15,7 +15,7 @@ import ua.shad.yatsurapizzaservicehw2.service.PizzaService;
  */
 public class SpringPizzaApp {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext repositoryContext = new ClassPathXmlApplicationContext("repositoryContext.xml"); // Spring application context for repository beans
         ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext(new String[] {"appContext.xml"}, repositoryContext); // Spring application context for service beans with access to repository beans context
 
@@ -38,5 +38,7 @@ public class SpringPizzaApp {
         System.out.println("Price: " + anotherOrder.getTotalPrice());
         orders = orderService.getAllOrders();
         orders.stream().forEach(System.out::println);
+        
+
     }
 }

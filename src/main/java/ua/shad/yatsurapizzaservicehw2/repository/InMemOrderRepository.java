@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 import ua.shad.yatsurapizzaservicehw2.domain.Order;
-import ua.shad.yatsurapizzaservicehw2.domain.Pizza;
 
 /**
  *

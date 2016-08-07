@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import ua.shad.yatsurapizzaservicehw2.domain.Customer;
 import ua.shad.yatsurapizzaservicehw2.domain.Order;
 import ua.shad.yatsurapizzaservicehw2.domain.Pizza;
+import ua.shad.yatsurapizzaservicehw2.infrastructure.Benchmark;
 import ua.shad.yatsurapizzaservicehw2.repository.OrderRepository;
 import ua.shad.yatsurapizzaservicehw2.repository.PizzaRepository;
 
@@ -54,6 +55,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Benchmark(active = true)
     public Order placeNewOrder(Customer customer, Integer... pizzasID) {
         List<Pizza> pizzas = pizzasListFromArrayOfIds(pizzasID);
         Order newOrder = getNewOrder();

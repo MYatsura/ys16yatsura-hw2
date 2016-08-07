@@ -2,6 +2,7 @@ package ua.shad.yatsurapizzaservicehw2.repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Repository;
 import ua.shad.yatsurapizzaservicehw2.domain.Pizza;
 import ua.shad.yatsurapizzaservicehw2.domain.Pizza.PizzaType;
 
@@ -9,6 +10,7 @@ import ua.shad.yatsurapizzaservicehw2.domain.Pizza.PizzaType;
  *
  * @author Maksym Yatsura
  */
+@Repository
 public class InMemPizzaRepository implements PizzaRepository {
     
     private List<Pizza> pizzas;

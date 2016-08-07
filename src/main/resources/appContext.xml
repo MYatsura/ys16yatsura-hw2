@@ -11,7 +11,7 @@
     <context:component-scan base-package="ua.shad.yatsurapizzaservicehw2.service"/>
     <context:component-scan base-package="ua.shad.yatsurapizzaservicehw2.domain"/>
     
-<!--    <bean class="ua.shad.yatsurapizzaservicehw2.infrastruct.BenchmarkPostProcessor"/>-->
+    <bean class="ua.shad.yatsurapizzaservicehw2.infrastructure.BenchmarkPostProcessor"/>
     
     <bean name="order" class="ua.shad.yatsurapizzaservicehw2.domain.Order" 
           scope="prototype"/>
